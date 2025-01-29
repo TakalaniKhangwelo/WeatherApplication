@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApplication.MainPage">
+    
+        <ScrollView>
+            <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+
+                <Label 
+                x:Name="LocationLabel"
+                Text="Loading location..."
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+                <Label 
+                x:Name="TemperatureLabel"
+                Text="--°C"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="48"
+                HorizontalOptions="Center" />
+
+                <Label 
+                x:Name="DescriptionLabel"
+                Text="Loading weather..."
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+                <Label 
+                x:Name="FeelsLikeLabel"
+                Text="Feels like: --°C"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+                <Label 
+                x:Name="HumidityLabel"
+                Text="Humidity: --%"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+                <Button 
+                x:Name="RefreshButton"
+                Text="Refresh"
+                SemanticProperties.Hint="Refreshes the weather data"
+                Clicked="OnRefreshClicked"
+                HorizontalOptions="Center" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage>
+
+              
